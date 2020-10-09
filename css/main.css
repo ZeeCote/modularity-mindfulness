@@ -19,9 +19,152 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.h2intro {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+nav {
+  justify-self: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline;
+  text-align: center;
+  font-size: 1.125rem;
+  margin-left: .5rem;
+}
+
+nav ul li a {
+  color: #3783a3;
+}
+
+.title {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  border-top: solid .2rem #e2e2e2;
+  border-bottom: solid .2rem #e2e2e2;
+  margin: 1.5rem 1rem;
+  padding: .5rem;
+}
+
+.intro p {
+  padding: 0 1rem .5rem;
+}
+
+header {
+  margin: 1rem;
+  display: grid;
+  justify-content: center;
+}
+
+main {
+  margin: 1rem;
+}
+
+.learn {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  border: solid .2rem #3783a3;
+  padding: .5em 1em .6em;
+  display: block;
+  width: 100%;
+  color: #3783a3;
+  text-decoration: none;
+  border-radius: .3rem;
+}
+
+footer {
+  border-top: solid .2rem #e2e2e2;
+  text-align: center;
+  font-size: .8rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  header {
+    display: grid;
+    justify-content: space-between;
+  }
+
+  .title {
+    justify-self: left;
+    grid-column: 1;
+    align-self: center;
+  }
+
+  nav {
+    justify-self: end;
+    grid-column: 1;
+    align-self: center;
+  }
+
+  .intro {
+    max-width: 30em;
+    justify-content: center;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+  }
+
+  .viewing {
+    grid-column: 1;
+  }
+
+  .gravel {
+    grid-column: 2;
+  }
+
+  .symbolism {
+    grid-column: 3;
+  }
+
 }
